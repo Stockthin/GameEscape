@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F01B5E8B-A861-567A-6356-A85489D39DBB}</ProjectGuid>
+    <ProjectGuid>{6E605429-E767-24F4-E04D-2FBF456640B2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,6 +51,7 @@
      <Compile Include="Assets\Script\PlayerMove.cs" />
      <Compile Include="Assets\Script\SawController.cs" />
      <Compile Include="Assets\Script\ScrollingObject.cs" />
+     <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

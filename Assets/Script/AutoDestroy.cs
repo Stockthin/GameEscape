@@ -9,9 +9,10 @@ using System.Collections;
 	/// </summary>
 	public class AutoDestroy : MonoBehaviour
 	{
-      void OnEnable()
+    public GameObject expl;
+    void OnEnable()
     {
-        Invoke("Destroy", 3f);
+        Invoke("Destroy", 4f);
         //StartCoroutine(IEDestroy());
     }
 
@@ -24,6 +25,7 @@ using System.Collections;
     void Destroy()
     {
         gameObject.SetActive(false);
+        Instantiate(expl, transform.position, Quaternion.identity);
     }
     void OnDisable()
     {
