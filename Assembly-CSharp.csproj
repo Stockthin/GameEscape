@@ -46,7 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\PlayerController.cs" />
      <Compile Include="Assets\Script\AutoDestroy.cs" />
      <Compile Include="Assets\Script\ButtonScript.cs" />
      <Compile Include="Assets\Script\FireBullet.cs" />
