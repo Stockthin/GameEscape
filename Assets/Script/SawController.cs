@@ -17,33 +17,38 @@ public class SawController : MonoBehaviour {
         target.x = (Random.Range(-7, 7));
         target.y = (Random.Range(-2, 3));
         target.z = (0);
-      //  sawRB.AddForce(new Vector2(target.x,target.y) * moveSpeed, ForceMode2D.Impulse);
+        
+        //  sawRB.AddForce(new Vector2(target.x,target.y) * moveSpeed, ForceMode2D.Impulse);
     }
     void Start()
     {
+        
         //transform.Translate((transform.position - target)  * Time.deltaTime * -1);
         //sawRB.position = (new Vector3(Random.Range(minSpeed,maxSpeed), Random.Range(minSpeed,maxSpeed),0) *Random.Range(minSpeed, maxSpeed));
+        sawRB.AddForce(new Vector2(3, Random.Range(-3, 3)) * moveSpeed);
     }
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(( transform.position - target ) * Random.Range(minSpeed,maxSpeed) * Time.deltaTime * -1);
+        // transform.Translate(( transform.position - target ) * Random.Range(minSpeed,maxSpeed) * Time.deltaTime * -1);
 
+        
         //transform.position = Vector3.Lerp(transform.position, target.transform.position, moveSpeed);
         // transform.Translate(transform.position * moveSpeed * Time.deltaTime * -1);
         //transform.position = Vector3.forward;
-       /* if (gameObject.tag == "Finish")
-        {
-            gameObject.SetActive(false);
-            return;
-        }*/
+        /* if (gameObject.tag == "Finish")
+         {
+             gameObject.SetActive(false);
+             return;
+         }*/
 
     }
-    void OnCollisionEnter2D(Collision2D coll)
+   
+    /*void OnCollisionEnter2D(Collision2D coll)
     {
         if (coll.gameObject.tag == "Finish")
             gameObject.SetActive(false);
 
-    }
+    }*/ 
 
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerMove : MonoBehaviour {
     public float speed;
@@ -56,7 +57,7 @@ public class PlayerMove : MonoBehaviour {
             transform.Translate(Vector3.left * Time.deltaTime * speed);
             amin.SetBool("Walking", true);
             Vector3 scale = transform.localScale;
-            scale.x = (float)-0.4;
+            scale.x = (float)-0.35;
             transform.localScale = scale;
         }
         else if (moveRight)
@@ -64,7 +65,7 @@ public class PlayerMove : MonoBehaviour {
             transform.Translate(Vector3.right * Time.deltaTime * speed);
             amin.SetBool("Walking", true);
             Vector3 scale = transform.localScale;
-            scale.x = (float)0.4;
+            scale.x = (float)0.35;
             transform.localScale = scale;
         }
         else if (moveUp)

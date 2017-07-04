@@ -5,8 +5,8 @@ using System.Collections.Generic;
 
 public class FireBullet : MonoBehaviour {
     public Transform Tip;
-   public float MinFireTime = 1
-        ;
+   public float MinFireTime = 1;
+    public GameObject bullet;
     public float maxFireTime = 4;
     //private GameObject samurai;
    // public float lastBomTime = 0;
@@ -16,7 +16,7 @@ public class FireBullet : MonoBehaviour {
     void Start () {
         //samurai = GameObject.FindGameObjectWithTag("Player");
 
-        InvokeRepeating("Fire",(Random.Range(MinFireTime,maxFireTime)), (Random.Range(MinFireTime, maxFireTime)));
+        InvokeRepeating("Fire", (Random.Range(MinFireTime,maxFireTime)), (Random.Range(MinFireTime, maxFireTime)));
        // upDateBom();
     }
    /* void Update()
@@ -33,18 +33,19 @@ public class FireBullet : MonoBehaviour {
     }*/
     void Fire()
     {
+        Instantiate(bullet, transform.position, Quaternion.identity);
         //upDateBom();
-        GameObject obj = ScrollingObject.current.GetPoolerGameObject();
+       /* GameObject obj = ScrollingObject.current.GetPoolerGameObject();
         if(obj == null)
         {
             return;
         }
        
-                obj.transform.position = transform.position ;
-                obj.transform.rotation = transform.rotation;
+                obj.transform.position =transform.position ;
+                //obj.transform.rotation = transform.rotation;
       //  GameObject bom = obj as GameObject;
         //bom.GetComponent<SawController>().target = samurai.transform.position;
-                obj.SetActive(true);
+                obj.SetActive(true);*/
              
         
         
