@@ -13,17 +13,75 @@ public class PlayerMove : MonoBehaviour {
     public float maxVelocity;
     private Rigidbody2D myRB;
     private Animator amin;
+    public bool moveLeft, moveRight, moveUp, moveDown;
 	void Awake () {
         myRB = GetComponent<Rigidbody2D>();
         amin = GetComponent<Animator>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        walk();
+    public void setMoveLeft(bool moveLeft)
+    {
+        this.moveLeft = moveLeft;
+    }
+    public void setMoveRight(bool moveRight)
+    {
+        this.moveRight = moveRight;
+    }
+    public void setMoveUp(bool moveUp)
+    {
+        this.moveUp = moveUp;
+    }
+    public void setMoveDown(bool moveDown)
+    {
+        this.moveDown = moveDown;
+    }
+    public void stopMove()
+    {
+        this.moveLeft = false;
+        this.moveRight = false;
+        this.moveUp = false;
+        this.moveDown = false;
+    }
+
+    // Update is called once per frame
+    void Update () {
+        playerWalkJoystick();
+       // walk();
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, minX, maxX), Mathf.Clamp(transform.position.y, minY, maxY));
         //playerWalk();
 	}
+    void playerWalkJoystick()
+    {
+        if (moveLeft)
+        {
+            transform.Translate(Vector3.left * Time.deltaTime * speed);
+            amin.SetBool("Walking", true);
+            Vector3 scale = transform.localScale;
+            scale.x = (float)-0.4;
+            transform.localScale = scale;
+        }
+        else if (moveRight)
+        {
+            transform.Translate(Vector3.right * Time.deltaTime * speed);
+            amin.SetBool("Walking", true);
+            Vector3 scale = transform.localScale;
+            scale.x = (float)0.4;
+            transform.localScale = scale;
+        }
+        else if (moveUp)
+        {
+            transform.Translate(Vector3.up * Time.deltaTime * speed);
+            amin.SetBool("Walking", true);
+        }
+        else if (moveDown)
+        {
+            transform.Translate(Vector3.down * Time.deltaTime * speed);
+            amin.SetBool("Walking", true);
+        }
+        else
+        {
+            amin.SetBool("Walking", false);
+        }
+    }
     void walk()
     {
         if (Input.GetKey(KeyCode.A))

@@ -15,7 +15,7 @@ public class SawController : MonoBehaviour {
 	void Awake () {
         sawRB = GetComponent<Rigidbody2D>();
         target.x = (Random.Range(-7, 7));
-        target.y = (Random.Range(-3, 3));
+        target.y = (Random.Range(-2, 3));
         target.z = (0);
       //  sawRB.AddForce(new Vector2(target.x,target.y) * moveSpeed, ForceMode2D.Impulse);
     }

@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6E605429-E767-24F4-E04D-2FBF456640B2}</ProjectGuid>
+    <ProjectGuid>{A7B9023F-357C-C721-6B0E-9A3438FC03FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\AutoDestroy.cs" />
+     <Compile Include="Assets\Script\ButtonScript.cs" />
      <Compile Include="Assets\Script\FireBullet.cs" />
      <Compile Include="Assets\Script\PlayerMove.cs" />
      <Compile Include="Assets\Script\SawController.cs" />
