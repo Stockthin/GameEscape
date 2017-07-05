@@ -54,6 +54,8 @@
      <Compile Include="Assets\Script\PlayerMove.cs" />
      <Compile Include="Assets\Script\SawController.cs" />
      <Compile Include="Assets\Script\ScrollingObject.cs" />
+     <Compile Include="Assets\Script\enemyDamage.cs" />
+     <Compile Include="Assets\Script\playerHealth.cs" />
      <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
      <Compile Include="Assets\TimeControl.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
