@@ -34,6 +34,7 @@ public class TimeControl : MonoBehaviour
         }
         else
         {
+            GetComponent<GamePlayController>().playerDIE();
             Destroy(player);
         }
     }

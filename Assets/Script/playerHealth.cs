@@ -75,6 +75,7 @@ public class playerHealth : MonoBehaviour {
         //AudioSource.PlayClipAtPoint(playerDeathAudio, transform.position);
         Instantiate(DeathFX, transform.position, transform.rotation);
         Destroy(gameObject);
+        GameObject.Find("GameController").GetComponent<GamePlayController>().playerDIE();
         //playerAS.PlayOneShot(playerDeathAudio);
         //
         // damageScreen.color = damagedColor;
