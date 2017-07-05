@@ -54,6 +54,7 @@
      <Compile Include="Assets\Script\PlayerMove.cs" />
      <Compile Include="Assets\Script\SawController.cs" />
      <Compile Include="Assets\Script\ScrollingObject.cs" />
+     <Compile Include="Assets\Script\SpawnManager.cs" />
      <Compile Include="Assets\Script\enemyDamage.cs" />
      <Compile Include="Assets\Script\playerHealth.cs" />
      <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
