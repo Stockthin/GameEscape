@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class GamePlayController : MonoBehaviour {
     [SerializeField]
     private GameObject pausePanel;
@@ -12,7 +13,7 @@ public class GamePlayController : MonoBehaviour {
     [SerializeField]
     private Button RestartGame;
     private Button ResumeGame;
-    
+   
    
   
     public void pauseGame()
@@ -21,7 +22,7 @@ public class GamePlayController : MonoBehaviour {
        
         pausePanel.SetActive(true);
        // ResumeGame.onClick.RemoveAllListeners();
-        ResumeGame.onClick.AddListener(()=>resumeGame());
+       // ResumeGame.onClick.AddListener(()=>resumeGame());
     }
     public void resumeGame()
     {
@@ -38,7 +39,7 @@ public class GamePlayController : MonoBehaviour {
     }
     public void playerDIE()
     {
-        Time.timeScale = 1f;
+        Time.timeScale = 0f;
         // pausePanel.SetActive(true);
         endGamepanel.SetActive(true);
         //ResumeGame.onClick.RemoveAllListeners();

@@ -58,8 +58,10 @@
      <Compile Include="Assets\Script\SpawnManager.cs" />
      <Compile Include="Assets\Script\enemyDamage.cs" />
      <Compile Include="Assets\Script\playerHealth.cs" />
+     <Compile Include="Assets\Script\restartGame.cs" />
      <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
      <Compile Include="Assets\TimeControl.cs" />
+     <Compile Include="Assets\mute.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

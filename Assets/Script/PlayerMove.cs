@@ -6,7 +6,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class PlayerMove : MonoBehaviour {
     public float speed;
 
-    public float maxX = 7;
+   public float maxX = 7;
     public float minX = -7;
     public float maxY = 4;
     public float minY = -4;

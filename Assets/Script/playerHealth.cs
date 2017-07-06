@@ -16,7 +16,7 @@ public class playerHealth : MonoBehaviour {
    AudioSource playerAS;
   // public AudioClip playerDeathAudio;
    // public Text gameOverScreen;
-   //public restartGame theGameManager;
+   public restartGame GameController;
     
     
     // Use this for initialization
@@ -75,13 +75,13 @@ public class playerHealth : MonoBehaviour {
         //AudioSource.PlayClipAtPoint(playerDeathAudio, transform.position);
         Instantiate(DeathFX, transform.position, transform.rotation);
         Destroy(gameObject);
-        GameObject.Find("GameController").GetComponent<GamePlayController>().playerDIE();
+        
         //playerAS.PlayOneShot(playerDeathAudio);
         //
         // damageScreen.color = damagedColor;
         // Animator gameOverAnimator = gameOverScreen.GetComponent<Animator>();
         // gameOverAnimator.SetTrigger("gameOver");
-        //theGameManager.restartTheGame();
+        GameController.restartTheGame();
 
     }
 }
