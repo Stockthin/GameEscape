@@ -14,9 +14,10 @@ public class playerHealth : MonoBehaviour {
     //float smoothColour = 5f;
     public AudioClip playerHurt;
    AudioSource playerAS;
-  // public AudioClip playerDeathAudio;
-   // public Text gameOverScreen;
-   public restartGame GameController;
+    // public AudioClip playerDeathAudio;
+    // public Text gameOverScreen;
+    public GameObject gameOverText;
+    public restartGame GameController;
     
     
     // Use this for initialization
@@ -75,6 +76,7 @@ public class playerHealth : MonoBehaviour {
         //AudioSource.PlayClipAtPoint(playerDeathAudio, transform.position);
         Instantiate(DeathFX, transform.position, transform.rotation);
         Destroy(gameObject);
+        gameOverText.SetActive(true);
         
         //playerAS.PlayOneShot(playerDeathAudio);
         //
