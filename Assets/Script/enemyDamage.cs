@@ -31,6 +31,8 @@ public class enemyDamage : MonoBehaviour {
             Debug.Log("dadsafsa");
         }
     }
+  
+    }
    /* void pushBack(Transform pushedObject)
     {
         Vector2 pushDirection = new Vector2(0, (pushedObject.position.y - transform.position.y)).normalized;
@@ -39,4 +41,4 @@ public class enemyDamage : MonoBehaviour {
         pushRB.velocity = Vector2.zero;
         pushRB.AddForce(pushDirection, ForceMode2D.Impulse);
     }*/
-}
+
