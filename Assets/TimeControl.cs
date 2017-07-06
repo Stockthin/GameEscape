@@ -34,8 +34,9 @@ public class TimeControl : MonoBehaviour
         }
         else
         {
-            GetComponent<GamePlayController>().playerDIE();
+          
             Destroy(player);
+            GetComponent<GamePlayController>().playerDIE();
         }
     }
     void GetPrefereces()

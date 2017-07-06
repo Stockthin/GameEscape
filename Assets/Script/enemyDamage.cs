@@ -28,7 +28,7 @@ public class enemyDamage : MonoBehaviour {
             Destroy(this.gameObject);
             Instantiate(expl, transform.position, Quaternion.identity);
             //pushBack(coll.transform);
-            Debug.Log("dadsafsa");
+           // Debug.Log("dadsafsa");
         }
     }
   

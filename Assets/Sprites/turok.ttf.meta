@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 87362f9cfdf56354297281dad842c03f
+timeCreated: 1499323007
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Turok
+  fontNames:
+  - Turok
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

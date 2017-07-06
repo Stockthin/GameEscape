@@ -10,19 +10,23 @@ public class GamePlayController : MonoBehaviour {
     private GameObject pausePanel;
     [SerializeField]
     private GameObject endGamepanel;
+    public GameObject nextLevel;
     [SerializeField]
     private Button RestartGame;
     private Button ResumeGame;
+    
    
    
   
     public void pauseGame()
     {
-        Time.timeScale = 0f;
+        //Debug.Log("Pause");
+
+          Time.timeScale = 0f;
        
         pausePanel.SetActive(true);
-       // ResumeGame.onClick.RemoveAllListeners();
-       // ResumeGame.onClick.AddListener(()=>resumeGame());
+        //ResumeGame.onClick.RemoveAllListeners();
+        //ResumeGame.onClick.AddListener(()=>resumeGame());
     }
     public void resumeGame()
     {
@@ -32,18 +36,29 @@ public class GamePlayController : MonoBehaviour {
     }
     public void restartGame()
     {
-        RestartGame.onClick.RemoveAllListeners();
+        //RestartGame.onClick.RemoveAllListeners();
         Time.timeScale = 1f;
         SceneManager.LoadScene("Play");
 
     }
+    public void menu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     public void playerDIE()
     {
+        //Debug.Log("DIE");
+
         Time.timeScale = 0f;
-        // pausePanel.SetActive(true);
-        endGamepanel.SetActive(true);
-        //ResumeGame.onClick.RemoveAllListeners();
-       // ResumeGame.onClick.AddListener(() => restartGame());
+         //pausePanel.SetActive(true);
+       endGamepanel.SetActive(true);
+        
+        RestartGame.onClick.RemoveAllListeners();
+       RestartGame.onClick.AddListener(() => restartGame());
+    }
+    public void NEXTLEVEL()
+    {
+        nextLevel.SetActive(true);
     }
 
 }

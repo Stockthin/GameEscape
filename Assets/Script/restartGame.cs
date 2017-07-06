@@ -6,23 +6,27 @@ public class restartGame : MonoBehaviour {
     public float restartTime;
     bool restartNow = false;
     float resetTime;
+    //public GameObject endgame;
+
+
 	void Start () {
-	
-	}
+       
+    }
 	
 	// Update is called once per frame
-	void Update () {
-        if (Input.GetKey(KeyCode.Escape))
+	void FixedUpdate () {
+      
+        if (restartNow && resetTime <= Time.time)
         {
-            SceneManager.LoadScene("begin");
+             GameObject.Find("GameController").GetComponent<GamePlayController>().playerDIE();
+            //Time.timeScale = 1;
+            //return;
+           // endgame.SetActive(true);
+            
         }
-        if(restartNow && resetTime <= Time.time)
-        {
-            GameObject.Find("GameController").GetComponent<GamePlayController>().playerDIE();
-            // SceneManager.LoadScene("begin");
-        }
-	
-	}
+
+
+    }
     public void restartTheGame()
     {
         restartNow = true;

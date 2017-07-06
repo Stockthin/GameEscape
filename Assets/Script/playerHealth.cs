@@ -18,8 +18,10 @@ public class playerHealth : MonoBehaviour {
     // public Text gameOverScreen;
     public GameObject gameOverText;
     public restartGame GameController;
-    
-    
+    public GameObject pause;
+
+
+
     // Use this for initialization
     void Start () {
         
@@ -49,6 +51,7 @@ public class playerHealth : MonoBehaviour {
         damaged = false;
 	
 	}
+   
     public void addDame(float Damage)
     {
         if (Damage <= 0) return;
@@ -77,7 +80,8 @@ public class playerHealth : MonoBehaviour {
         Instantiate(DeathFX, transform.position, transform.rotation);
         Destroy(gameObject);
         gameOverText.SetActive(true);
-        
+        pause.SetActive(false);
+       
         //playerAS.PlayOneShot(playerDeathAudio);
         //
         // damageScreen.color = damagedColor;
