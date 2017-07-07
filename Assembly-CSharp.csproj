@@ -57,13 +57,14 @@
      <Compile Include="Assets\Script\PlayerController.cs" />
      <Compile Include="Assets\Script\PlayerMove.cs" />
      <Compile Include="Assets\Script\SawController.cs" />
+     <Compile Include="Assets\Script\ScoreManager.cs" />
      <Compile Include="Assets\Script\ScrollingObject.cs" />
      <Compile Include="Assets\Script\SpawnManager.cs" />
+     <Compile Include="Assets\Script\TimeControl.cs" />
      <Compile Include="Assets\Script\enemyDamage.cs" />
      <Compile Include="Assets\Script\playerHealth.cs" />
      <Compile Include="Assets\Script\restartGame.cs" />
      <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
-     <Compile Include="Assets\TimeControl.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

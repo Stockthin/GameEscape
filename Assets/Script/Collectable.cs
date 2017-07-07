@@ -4,36 +4,43 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Collectable : MonoBehaviour {
+    private int count;
+    public GameObject Door;
+    public int total = 10;
    
-    Text text;
-    int _Score = 0;
-    //const string SCORE_TEXT = "= ";
-    // Use this for initialization
     void Start () {
-        if (Door.instance != null)
+        count = 0;
+        /*if (Door.instance != null)
         {
             Door.instance.CollectableCount++;
-        }
+        }*/
 	}
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
+            ScoreManager.AddPoints(1);
             
             Destroy(gameObject);
-            _Score += 1;
-            text.text += _Score;
-            //_Score++;
-            //Score.text = SCORE_TEXT + _Score;
-            if (Door.instance != null)
+            count += 1;
+
+            
+           /* if (Door.instance != null)
             {
                 Door.instance.Decrecollect();
-            }
+            }*/
+        }
+    }
+    void spawnDoor()
+    {
+        if(count == total)
+        {
+            Door.SetActive(true);
         }
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
+        spawnDoor();
 	}
 }

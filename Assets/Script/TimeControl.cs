@@ -10,6 +10,7 @@ public class TimeControl : MonoBehaviour
     public float time;
     public float timeBurn;
     public float timeLeft = 1f;
+  
     void Awake()
     {
         GetPrefereces();
@@ -34,9 +35,10 @@ public class TimeControl : MonoBehaviour
         }
         else
         {
-          
-            Destroy(player);
-            GetComponent<GamePlayController>().playerDIE();
+           
+            GameObject.Find("Player").GetComponent<playerHealth>().makeDead();
+            //Destroy(player);
+            //GetComponent<GamePlayController>().playerDIE();
         }
     }
     void GetPrefereces()

@@ -76,6 +76,7 @@ public class playerHealth : MonoBehaviour {
     }
     public void makeDead()
     {
+        
         //AudioSource.PlayClipAtPoint(playerDeathAudio, transform.position);
         Instantiate(DeathFX, transform.position, transform.rotation);
         Destroy(gameObject);
