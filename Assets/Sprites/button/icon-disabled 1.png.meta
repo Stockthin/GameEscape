@@ -1,0 +1,770 @@
+fileFormatVersion: 2
+guid: e761d40acac958c49b27531eb3eb38e2
+timeCreated: 1499671628
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: icon-disabled 1_0
+    21300002: icon-disabled 1_1
+    21300004: icon-disabled 1_2
+    21300006: icon-disabled 1_3
+    21300008: icon-disabled 1_4
+    21300010: icon-disabled 1_5
+    21300012: icon-disabled 1_6
+    21300014: icon-disabled 1_7
+    21300016: icon-disabled 1_8
+    21300018: icon-disabled 1_9
+    21300020: icon-disabled 1_10
+    21300022: icon-disabled 1_11
+    21300024: icon-disabled 1_12
+    21300026: icon-disabled 1_13
+    21300028: icon-disabled 1_14
+    21300030: icon-disabled 1_15
+    21300032: icon-disabled 1_16
+    21300034: icon-disabled 1_17
+    21300036: icon-disabled 1_18
+    21300038: icon-disabled 1_19
+    21300040: icon-disabled 1_20
+    21300042: icon-disabled 1_21
+    21300044: icon-disabled 1_22
+    21300046: icon-disabled 1_23
+    21300048: icon-disabled 1_24
+    21300050: icon-disabled 1_25
+    21300052: icon-disabled 1_26
+    21300054: icon-disabled 1_27
+    21300056: icon-disabled 1_28
+    21300058: icon-disabled 1_29
+    21300060: icon-disabled 1_30
+    21300062: icon-disabled 1_31
+    21300064: icon-disabled 1_32
+    21300066: icon-disabled 1_33
+    21300068: icon-disabled 1_34
+    21300070: icon-disabled 1_35
+    21300072: icon-disabled 1_36
+    21300074: icon-disabled 1_37
+    21300076: icon-disabled 1_38
+    21300078: icon-disabled 1_39
+    21300080: icon-disabled 1_40
+    21300082: icon-disabled 1_41
+    21300084: icon-disabled 1_42
+    21300086: icon-disabled 1_43
+    21300088: icon-disabled 1_44
+    21300090: icon-disabled 1_45
+    21300092: icon-disabled 1_46
+    21300094: icon-disabled 1_47
+    21300096: icon-disabled 1_48
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: icon-disabled 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 333
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 333
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 333
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_3
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 333
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_4
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 333
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_5
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 333
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_6
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 333
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_7
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 333
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_8
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 333
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_9
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 333
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_11
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 250
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_12
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 250
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_13
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 250
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_14
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 250
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_15
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 250
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_16
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 250
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_17
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 250
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_18
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 250
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_19
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 250
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_21
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 168
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_22
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 168
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_23
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 168
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_24
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 168
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_25
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 168
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_26
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 168
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_27
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 168
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_28
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 168
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_29
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 168
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 83
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_31
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 83
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_32
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 83
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_33
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 83
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_34
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 83
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_35
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 83
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_36
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 83
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_37
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 83
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_38
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 83
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_39
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 83
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_41
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_42
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 0
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_43
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 0
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_44
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_45
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 0
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_46
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_47
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon-disabled 1_48
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 2
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
