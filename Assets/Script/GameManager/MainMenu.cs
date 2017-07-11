@@ -24,12 +24,13 @@ public class MainMenu : MonoBehaviour {
     public void PlayGame(string index)
     {
         StartCoroutine(LoadScENEaSync("Play"));
-        //Time.timeScale = 0f;
+        Time.timeScale = 0f;
     }
 
-    public void Level2()
+    public void Level2(string index)
     {
-        SceneManager.LoadScene("level1");
+        StartCoroutine(LoadScENEaSync("level1"));
+        //SceneManager.LoadScene("level1");
         Time.timeScale = 0f;
     }
     public void chooseLevel()
