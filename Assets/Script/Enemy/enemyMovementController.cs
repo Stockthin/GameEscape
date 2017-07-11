@@ -53,6 +53,7 @@ public class enemyMovementController : MonoBehaviour {
             }
             canFlip = false;
             charging = true;
+            enemyAnimator.SetBool("Atrack", true);
             startChargeTime = Time.time + chargeTime;
         }
                
@@ -64,7 +65,7 @@ public class enemyMovementController : MonoBehaviour {
         if(other.tag == "Player" && nextShootTime < Time.time)
         {
             nextShootTime = Time.time + shootTime;
-            enemyAnimator.SetBool("Attrack", true);
+            enemyAnimator.SetBool("Atrack", true);
             Instantiate(bullet, shootFrom.position, shootFrom.rotation);
                 /* if (!facingRight) ; //enemyRB.AddForce(new Vector2(-1, 0) * enemySpeed);
                  else enemyRB.AddForce(new Vector2(1, 0) * enemySpeed);*/
@@ -79,7 +80,8 @@ public class enemyMovementController : MonoBehaviour {
             canFlip = true;
             charging = false;
             enemyRB.velocity = new Vector2(0f, 0f);
-           // enemyAnimator.SetBool("isCharging", charging);
+            enemyAnimator.SetBool("Atrack", false);
+            // enemyAnimator.SetBool("isCharging", charging);
         }
     }
     void flipFacing()
