@@ -67,6 +67,7 @@
      <Compile Include="Assets\Script\GameManager\restartGame.cs" />
      <Compile Include="Assets\Script\Player\PlayerController.cs" />
      <Compile Include="Assets\Script\Player\PlayerMove.cs" />
+     <Compile Include="Assets\Script\Player\ShurikenControl.cs" />
      <Compile Include="Assets\Script\Player\playerHealth.cs" />
      <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
