@@ -45,17 +45,21 @@ public class PlayerController : MonoBehaviour
         transform.Translate (new Vector2 (movevec.x * Time.deltaTime, movevec.y * Time.deltaTime ));
         if(movevec.x > 0)
         {
-            
+            playerAni.SetBool("Walking", true);
             Vector3 scale = transform.localScale;
             scale.x = (float)0.3;
             transform.localScale = scale;
         }
         else if (movevec.x < 0)
         {
-            
+            playerAni.SetBool("Walking", true);
             Vector3 scale = transform.localScale;
             scale.x = (float)-0.3;
             transform.localScale = scale;
+        }
+        else
+        {
+            playerAni.SetBool("Walking", false);
         }
 		//fire ();
 

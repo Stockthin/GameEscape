@@ -36,6 +36,7 @@ public class enemyHealth : MonoBehaviour
     void makeDead()
     {
         Destroy(gameObject);
+        ScoreManager.AddPoints(1);
         AudioSource.PlayClipAtPoint(deathKnell, transform.position);
         Instantiate(enemyDeathFx, transform.position, transform.rotation);
     }
