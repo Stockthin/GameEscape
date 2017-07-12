@@ -14,6 +14,7 @@ public class ButtonScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandle
     {
         if(gameObject.name == "Left")
         {
+            
             player.setMoveLeft(true);
         }
         if (gameObject.name == "Right")

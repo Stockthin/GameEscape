@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
 	{
 		Vector2 movevec = new Vector2 (CrossPlatformInputManager.GetAxis ("Horizontal") * moveForce, CrossPlatformInputManager.GetAxisRaw ("Vertical") * moveForce);
        // playerAni.SetBool("Walking", true);
-        transform.Translate (new Vector2 (movevec.x * Time.deltaTime, movevec.y * Time.deltaTime ));
+        transform.Translate (new Vector2 (movevec.x  , movevec.y ));
         if(movevec.x > 0)
         {
             playerAni.SetBool("Walking", true);
