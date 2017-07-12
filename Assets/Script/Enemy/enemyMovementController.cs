@@ -19,6 +19,7 @@ public class enemyMovementController : MonoBehaviour {
     public float shootTime;
     public int changeShoot;
     float nextShootTime;
+    public GameObject knief;
 
     // Use this for initialization
     void Start () {
@@ -53,7 +54,7 @@ public class enemyMovementController : MonoBehaviour {
             }
             canFlip = false;
             charging = true;
-            enemyAnimator.SetBool("Atrack", true);
+            //enemyAnimator.SetBool("Atrack", true);
             startChargeTime = Time.time + chargeTime;
         }
                
@@ -67,6 +68,7 @@ public class enemyMovementController : MonoBehaviour {
             nextShootTime = Time.time + shootTime;
             enemyAnimator.SetBool("Atrack", true);
             Instantiate(bullet, shootFrom.position, shootFrom.rotation);
+            knief.SetActive(false);
                 /* if (!facingRight) ; //enemyRB.AddForce(new Vector2(-1, 0) * enemySpeed);
                  else enemyRB.AddForce(new Vector2(1, 0) * enemySpeed);*/
                 // enemyAnimator.SetBool("isCharging", charging);
@@ -80,6 +82,7 @@ public class enemyMovementController : MonoBehaviour {
             canFlip = true;
             charging = false;
             enemyRB.velocity = new Vector2(0f, 0f);
+            knief.SetActive(true);
             enemyAnimator.SetBool("Atrack", false);
             // enemyAnimator.SetBool("isCharging", charging);
         }

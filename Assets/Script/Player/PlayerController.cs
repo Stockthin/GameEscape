@@ -12,20 +12,22 @@ public class PlayerController : MonoBehaviour
 	public float shootTime;
 	public int changeShoot;
 	float nextShootTime;
+    Animator playerAni;
 	// Use this for initialization
 	void Start ()
 	{
 		myBD = this.GetComponent<Rigidbody2D> ();
-
+        playerAni = GetComponent<Animator>();
 	}
 
 	public void fire ()
 	{
 		if (Input.GetKey (KeyCode.Space) && nextShootTime < Time.time) {
 			nextShootTime = Time.time + shootTime;
-            
-			GameObject shuriken = Instantiate (bullet, shotFrom.position, Quaternion.identity).gameObject;
+            playerAni.SetTrigger("Attrack");
 
+            GameObject shuriken = Instantiate (bullet, shotFrom.position, Quaternion.identity).gameObject;
+            
 			float shootForce = 5;
 
 			if (transform.localScale.x > 0)
