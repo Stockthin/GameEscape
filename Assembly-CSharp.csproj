@@ -56,6 +56,7 @@
      <Compile Include="Assets\Script\Enemy\KniefControl.cs" />
      <Compile Include="Assets\Script\Enemy\SawController.cs" />
      <Compile Include="Assets\Script\Enemy\enemyDamage.cs" />
+     <Compile Include="Assets\Script\Enemy\enemyHealth.cs" />
      <Compile Include="Assets\Script\Enemy\enemyMovementController.cs" />
      <Compile Include="Assets\Script\GameManager\ButtonScript.cs" />
      <Compile Include="Assets\Script\GameManager\GamePlayController.cs" />

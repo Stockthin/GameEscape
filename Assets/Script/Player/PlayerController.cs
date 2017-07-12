@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
 	public void fire ()
 	{
-		if (Input.GetKey (KeyCode.Space) && nextShootTime < Time.time) {
+		if ( nextShootTime < Time.time) {
 			nextShootTime = Time.time + shootTime;
             playerAni.SetTrigger("Attrack");
 
@@ -40,10 +40,24 @@ public class PlayerController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		Vector2 movevec = new Vector2 (CrossPlatformInputManager.GetAxis ("Horizontal"), CrossPlatformInputManager.GetAxisRaw ("Vertical") * moveForce);
-
-		transform.Translate (new Vector2 (0, movevec.y * Time.deltaTime));
-		fire ();
+		Vector2 movevec = new Vector2 (CrossPlatformInputManager.GetAxis ("Horizontal") * moveForce, CrossPlatformInputManager.GetAxisRaw ("Vertical") * moveForce);
+       // playerAni.SetBool("Walking", true);
+        transform.Translate (new Vector2 (movevec.x * Time.deltaTime, movevec.y * Time.deltaTime ));
+        if(movevec.x > 0)
+        {
+            
+            Vector3 scale = transform.localScale;
+            scale.x = (float)0.3;
+            transform.localScale = scale;
+        }
+        else if (movevec.x < 0)
+        {
+            
+            Vector3 scale = transform.localScale;
+            scale.x = (float)-0.3;
+            transform.localScale = scale;
+        }
+		//fire ();
 
 		//myBD.AddForce(movevec);
 		/* Vector2 scale = transform.localScale;
