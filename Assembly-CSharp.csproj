@@ -60,6 +60,7 @@
      <Compile Include="Assets\Script\Enemy\enemyMovementController.cs" />
      <Compile Include="Assets\Script\GameManager\ButtonScript.cs" />
      <Compile Include="Assets\Script\GameManager\GamePlayController.cs" />
+     <Compile Include="Assets\Script\GameManager\HealthPickkup.cs" />
      <Compile Include="Assets\Script\GameManager\MainMenu.cs" />
      <Compile Include="Assets\Script\GameManager\ScoreManager.cs" />
      <Compile Include="Assets\Script\GameManager\ScrollingObject.cs" />
