@@ -66,6 +66,7 @@
      <Compile Include="Assets\Script\GameManager\SpawnManager.cs" />
      <Compile Include="Assets\Script\GameManager\TimeControl.cs" />
      <Compile Include="Assets\Script\GameManager\restartGame.cs" />
+     <Compile Include="Assets\Script\GameManager\spawn2.cs" />
      <Compile Include="Assets\Script\Player\PlayerController.cs" />
      <Compile Include="Assets\Script\Player\PlayerMove.cs" />
      <Compile Include="Assets\Script\Player\ShurikenControl.cs" />

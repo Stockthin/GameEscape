@@ -30,6 +30,11 @@ public class enemyDamage : MonoBehaviour {
             //pushBack(coll.transform);
            // Debug.Log("dadsafsa");
         }
+       /* if(coll.gameObject.tag == "Knife")
+        {
+            Destroy(gameObject);
+            Instantiate(expl, transform.position, Quaternion.identity);
+        }*/
     }
   
     }

@@ -15,6 +15,7 @@ public class enemyMovementController : MonoBehaviour {
     Rigidbody2D enemyRB;
     public Transform shootFrom;
     public GameObject bullet;
+    public GameObject bullet2;
     
     public float shootTime;
     public int changeShoot;
@@ -22,12 +23,15 @@ public class enemyMovementController : MonoBehaviour {
     public GameObject knief;
 
     // Use this for initialization
-    void Start () {
-        
-        enemyAnimator = GetComponentInChildren<Animator>();
-        enemyRB = GetComponent<Rigidbody2D>();
-        nextShootTime = 0f;
+    void Start()
+    {
+        if (gameObject != null)
+        {
+            enemyAnimator = GetComponentInChildren<Animator>();
+            enemyRB = GetComponent<Rigidbody2D>();
+            nextShootTime = 0f;
 
+        }
     }
 	
 	// Update is called once per frame
@@ -42,58 +46,71 @@ public class enemyMovementController : MonoBehaviour {
     }
     void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.tag == "Player")
+        if (enemyRB.gameObject != null)
         {
-            if (facingRight && other.transform.position.x < transform.position.x)
+            if (other.tag == "Player")
             {
-                flipFacing();
+                if (facingRight && other.transform.position.x < transform.position.x)
+                {
+                    flipFacing();
+                }
+                else if (!facingRight && other.transform.position.x > transform.position.x)
+                {
+                    flipFacing();
+                }
+                canFlip = false;
+                charging = true;
+                //enemyAnimator.SetBool("Atrack", true);
+                startChargeTime = Time.time + chargeTime;
             }
-            else if (!facingRight && other.transform.position.x > transform.position.x)
-            {
-                flipFacing();
-            }
-            canFlip = false;
-            charging = true;
-            //enemyAnimator.SetBool("Atrack", true);
-            startChargeTime = Time.time + chargeTime;
         }
-               
 
         
     }
     void OnTriggerStay2D(Collider2D other)
     {
-        if(other.tag == "Player" && nextShootTime < Time.time)
-        {
-            nextShootTime = Time.time + shootTime;
-            enemyAnimator.SetBool("Atrack", true);
-            Instantiate(bullet, shootFrom.position, shootFrom.rotation);
-            knief.SetActive(false);
+       
+            if (other.tag == "Player" && nextShootTime < Time.time)
+            {
+            if (gameObject != null)
+            {
+                nextShootTime = Time.time + shootTime;
+                enemyAnimator.SetBool("Atrack", true);
+            
+                Instantiate(bullet, shootFrom.position, shootFrom.rotation);
+                knief.SetActive(false);
                 /* if (!facingRight) ; //enemyRB.AddForce(new Vector2(-1, 0) * enemySpeed);
                  else enemyRB.AddForce(new Vector2(1, 0) * enemySpeed);*/
-                // enemyAnimator.SetBool("isCharging", charging);
+            }
+
             
         }
+ 
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if (enemyRB.gameObject != null)
         {
-            canFlip = true;
-            charging = false;
-            enemyRB.velocity = new Vector2(0f, 0f);
-            knief.SetActive(true);
-            enemyAnimator.SetBool("Atrack", false);
-            // enemyAnimator.SetBool("isCharging", charging);
+            if (other.tag == "Player")
+            {
+                canFlip = true;
+                charging = false;
+                enemyRB.velocity = new Vector2(0f, 0f);
+                knief.SetActive(true);
+                enemyAnimator.SetBool("Atrack", false);
+                
+            }
         }
     }
     void flipFacing()
     {
-        if (!canFlip) return;
-        float facingX = enemyGraphic.transform.localScale.x;
-        facingX *= -1f;
-        enemyGraphic.transform.localScale = new Vector3(facingX, enemyGraphic.transform.localScale.y, enemyGraphic.transform.localScale.z);
-        facingRight = !facingRight;
-
+        if (enemyRB.gameObject != null)
+        {
+            if (!canFlip) return;
+            float facingX = enemyGraphic.transform.localScale.x;
+            facingX *= -1f;
+            enemyGraphic.transform.localScale = new Vector3(facingX, enemyGraphic.transform.localScale.y, enemyGraphic.transform.localScale.z);
+            facingRight = !facingRight;
+        }
     }
 }

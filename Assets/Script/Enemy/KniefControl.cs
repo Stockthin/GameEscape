@@ -21,6 +21,10 @@ public class KniefControl : MonoBehaviour {
         {
             myBox.isTrigger = true;
         }
+        else if(coll.gameObject.tag == "Finish")
+        {
+            Destroy(gameObject);
+        }
     }
 	// Update is called once per frame
 	void Update () {
