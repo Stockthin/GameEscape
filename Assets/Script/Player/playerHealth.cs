@@ -19,6 +19,7 @@ public class playerHealth : MonoBehaviour {
     public GameObject gameOverText;
     public restartGame GameController;
     public GameObject pause;
+    public GameObject Health;
 
 
 
@@ -66,6 +67,13 @@ public class playerHealth : MonoBehaviour {
            
             makeDead();
            
+        }
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Heart")
+        {
+            Instantiate(Health, transform.position, Quaternion.identity);
         }
     }
     public void addHealth(float healthAmount)
