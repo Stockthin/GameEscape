@@ -70,7 +70,7 @@ public class GamePlayController : MonoBehaviour {
     public void nextLevels()
     {
         Debug.Log("AAAAAAAAAA");
-        SceneManager.LoadScene("level1");
+        SceneManager.LoadScene(Application.loadedLevel+1);
         Time.timeScale = 0f;
     }
 }

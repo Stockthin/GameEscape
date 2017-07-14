@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 	public int changeShoot;
 	float nextShootTime;
     Animator playerAni;
+    public GameObject weapon;
 	// Use this for initialization
 	void Start ()
 	{
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
 		if ( nextShootTime < Time.time) {
 			nextShootTime = Time.time + shootTime;
             playerAni.SetTrigger("Attrack");
+            weapon.SetActive(false);
 
             GameObject shuriken = Instantiate (bullet, shotFrom.position, Quaternion.identity).gameObject;
             
@@ -36,6 +38,11 @@ public class PlayerController : MonoBehaviour
 				shuriken.GetComponent<ShurikenControl> ().Shoot (new Vector2 (-shootForce, 0));
 		}
 	}
+    public void attrack()
+    {
+        playerAni.SetTrigger("Attrack");
+        weapon.SetActive(true);
+    }
 
 	// Update is called once per frame
 	void Update ()

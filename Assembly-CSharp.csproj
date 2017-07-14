@@ -55,6 +55,12 @@
      <Compile Include="Assets\Particle\Sky FX Pack\Scripts\RayBehavior.cs" />
      <Compile Include="Assets\Particle\Sky FX Pack\Scripts\RotateBehaviour.cs" />
      <Compile Include="Assets\Particle\Sky FX Pack\Scripts\ScrollBehaviour.cs" />
+     <Compile Include="Assets\PowerUp\Scripts\CustomizablePowerUp.cs" />
+     <Compile Include="Assets\PowerUp\Scripts\PowerUpManager.cs" />
+     <Compile Include="Assets\PowerUp\Scripts\PowerUpRotation.cs" />
+     <Compile Include="Assets\PowerUp\Scripts\ScaleParticles.cs" />
+     <Compile Include="Assets\PowerUp\Scripts\TakeablePowerUp.cs" />
+     <Compile Include="Assets\PowerUp\Scripts\Utility\Singleton.cs" />
      <Compile Include="Assets\Script\Door.cs" />
      <Compile Include="Assets\Script\Enemy\AutoDestroy.cs" />
      <Compile Include="Assets\Script\Enemy\CatusControl.cs" />
@@ -82,6 +88,7 @@
      <Compile Include="Assets\Script\Player\ShurikenControl.cs" />
      <Compile Include="Assets\Script\Player\dameEnemy.cs" />
      <Compile Include="Assets\Script\Player\playerHealth.cs" />
+     <Compile Include="Assets\swordDame.cs" />
      <None Include="Assets\Particle\Realistic Hail Set\README.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Particle\Particle Ribbon\readme_Simple_Particle_Ribbon.txt" />
