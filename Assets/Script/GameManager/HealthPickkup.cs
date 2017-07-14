@@ -5,9 +5,10 @@ using UnityEngine;
 public class HealthPickkup : MonoBehaviour {
     public float healthAmount;
 
+
 	// Use this for initialization
 	void Start () {
-		
+        
 	}
 	
 	// Update is called once per frame

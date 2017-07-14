@@ -73,7 +73,7 @@ public class playerHealth : MonoBehaviour {
     {
         if(other.tag == "Heart")
         {
-            Instantiate(Health, transform.position, Quaternion.identity);
+            Instantiate(Health, transform.position,transform.rotation );
         }
     }
     public void addHealth(float healthAmount)
