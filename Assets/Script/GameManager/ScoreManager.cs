@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour {
     Text text;
     public GameObject door;
     public int ScoreTotal;
+    public GameObject bamBoo;
     // Use this for initialization
     void Start () {
         text = GetComponent<Text>();
@@ -32,6 +33,7 @@ public class ScoreManager : MonoBehaviour {
     {
         if(score  == ScoreTotal)
         {
+            bamBoo.SetActive(false);
             door.SetActive(true);
         }
     }

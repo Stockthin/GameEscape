@@ -46,7 +46,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Realistic Hail Set\Demo Scene\Scripts\DemoSceneController.cs" />
+     <Compile Include="Assets\Particle\Particle Ribbon\Scripts\ReverseNormals.cs" />
+     <Compile Include="Assets\Particle\Realistic Hail Set\Demo Scene\Scripts\DemoSceneController.cs" />
+     <Compile Include="Assets\Particle\SimpleParticlePack\Scripts\ParticleTester.cs" />
+     <Compile Include="Assets\Particle\Sky FX Pack\Scripts\LightBeamsControlScript.cs" />
+     <Compile Include="Assets\Particle\Sky FX Pack\Scripts\LookAtBehaviour.cs" />
+     <Compile Include="Assets\Particle\Sky FX Pack\Scripts\LookAtCameraBehaviour.cs" />
+     <Compile Include="Assets\Particle\Sky FX Pack\Scripts\RayBehavior.cs" />
+     <Compile Include="Assets\Particle\Sky FX Pack\Scripts\RotateBehaviour.cs" />
+     <Compile Include="Assets\Particle\Sky FX Pack\Scripts\ScrollBehaviour.cs" />
      <Compile Include="Assets\Script\Door.cs" />
      <Compile Include="Assets\Script\Enemy\AutoDestroy.cs" />
      <Compile Include="Assets\Script\Enemy\CatusControl.cs" />
@@ -74,15 +82,9 @@
      <Compile Include="Assets\Script\Player\ShurikenControl.cs" />
      <Compile Include="Assets\Script\Player\dameEnemy.cs" />
      <Compile Include="Assets\Script\Player\playerHealth.cs" />
-     <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
-     <Compile Include="Assets\Sky FX Pack\Scripts\LightBeamsControlScript.cs" />
-     <Compile Include="Assets\Sky FX Pack\Scripts\LookAtBehaviour.cs" />
-     <Compile Include="Assets\Sky FX Pack\Scripts\LookAtCameraBehaviour.cs" />
-     <Compile Include="Assets\Sky FX Pack\Scripts\RayBehavior.cs" />
-     <Compile Include="Assets\Sky FX Pack\Scripts\RotateBehaviour.cs" />
-     <Compile Include="Assets\Sky FX Pack\Scripts\ScrollBehaviour.cs" />
-     <None Include="Assets\Realistic Hail Set\README.txt" />
+     <None Include="Assets\Particle\Realistic Hail Set\README.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Particle\Particle Ribbon\readme_Simple_Particle_Ribbon.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
