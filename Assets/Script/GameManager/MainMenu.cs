@@ -26,6 +26,11 @@ public class MainMenu : MonoBehaviour {
         StartCoroutine(LoadScENEaSync("Play"));
         Time.timeScale = 0f;
     }
+    public void Level3(string index)
+    {
+        StartCoroutine(LoadScENEaSync("level2"));
+    }
+
 
     public void Level2(string index)
     {

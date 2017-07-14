@@ -6,6 +6,7 @@ public class Door : MonoBehaviour {
 
     public GameObject nextLevel;
     Animator myAmin;
+    public GameObject pause;
    
   
  
@@ -13,6 +14,7 @@ public class Door : MonoBehaviour {
     {
         if(target.tag == "Player")
         {
+            pause.SetActive(false);
             Time.timeScale = 0;
             nextLevel.SetActive(true);
         }
