@@ -74,6 +74,8 @@
      <Compile Include="Assets\Script\Enemy\enemyHealth.cs" />
      <Compile Include="Assets\Script\Enemy\enemyMovementController.cs" />
      <Compile Include="Assets\Script\GameManager\ButtonScript.cs" />
+     <Compile Include="Assets\Script\GameManager\CoinCollect.cs" />
+     <Compile Include="Assets\Script\GameManager\CoinManager.cs" />
      <Compile Include="Assets\Script\GameManager\GamePlayController.cs" />
      <Compile Include="Assets\Script\GameManager\HealthPickkup.cs" />
      <Compile Include="Assets\Script\GameManager\MainMenu.cs" />
