@@ -81,6 +81,7 @@
      <Compile Include="Assets\Script\GameManager\MainMenu.cs" />
      <Compile Include="Assets\Script\GameManager\ScoreManager.cs" />
      <Compile Include="Assets\Script\GameManager\ScrollingObject.cs" />
+     <Compile Include="Assets\Script\GameManager\SpawnCoin.cs" />
      <Compile Include="Assets\Script\GameManager\SpawnManager.cs" />
      <Compile Include="Assets\Script\GameManager\TimeControl.cs" />
      <Compile Include="Assets\Script\GameManager\restartGame.cs" />
