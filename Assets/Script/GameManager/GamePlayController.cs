@@ -15,8 +15,13 @@ public class GamePlayController : MonoBehaviour {
     private Button RestartGame;
     private Button ResumeGame;
     public GameObject missPanel;
+    public GameObject marketPanel;
    
-    
+    public void market()
+    {
+        nextLevel.SetActive(false);
+        marketPanel.SetActive(true);
+    }
    
    public void missPanels()
     {

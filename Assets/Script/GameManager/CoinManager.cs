@@ -6,12 +6,13 @@ using UnityEngine.UI;
 public class CoinManager : MonoBehaviour {
     public static int coinScore;
     Text text;
-    public static int totalCoin;
+    //public int totalCoin;
 	// Use this for initialization
+   
  
 	void Start () {
         text = GetComponent<Text>();
-        coinScore = 0;
+        //coinScore = 0;
 	}
 	
 	// Update is called once per frame
@@ -21,7 +22,7 @@ public class CoinManager : MonoBehaviour {
             coinScore = 0;
         }
         text.text = " = " + coinScore;
-        totalCoin += coinScore;
+       // totalCoin += coinScore;
 	}
     public static void addPoint(int coinAdd)
     {
