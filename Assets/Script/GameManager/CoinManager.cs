@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CoinManager : MonoBehaviour {
     public static int coinScore;
@@ -9,7 +10,11 @@ public class CoinManager : MonoBehaviour {
     //public int totalCoin;
 	// Use this for initialization
    
- 
+ void Awake()
+    {
+        DontDestroyOnLoad(this);
+        
+    }
 	void Start () {
         text = GetComponent<Text>();
         //coinScore = 0;
@@ -21,6 +26,7 @@ public class CoinManager : MonoBehaviour {
         {
             coinScore = 0;
         }
+
         text.text = " = " + coinScore;
        // totalCoin += coinScore;
 	}
