@@ -16,6 +16,7 @@ public class GamePlayController : MonoBehaviour {
     private Button ResumeGame;
     public GameObject missPanel;
     public GameObject marketPanel;
+    public GameObject Volume;
    
     public void market()
     {
@@ -71,6 +72,10 @@ public class GamePlayController : MonoBehaviour {
     public void NEXTLEVEL()
     {
         nextLevel.SetActive(true);
+    }
+    public void volume()
+    {
+        Volume.SetActive(true);
     }
     public void nextLevels()
     {
