@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class AudioManager : MonoBehaviour {
     public AudioClip backGroundAudio;
     AudioSource audioManager;
-    Slider volSlider;
+    public Slider volSlider;
 
     void Awake()
     {
@@ -19,6 +19,10 @@ public class AudioManager : MonoBehaviour {
         audioManager.clip = backGroundAudio;
         audioManager.Play();
 
+    }
+    void Update()
+    {
+        audioManager.volume = volSlider.value;
     }
     void playAudio()
     {
@@ -40,17 +44,17 @@ public class AudioManager : MonoBehaviour {
     }
     public void AddVol()
     {
-        audioManager.volume +=(float) 0.15;
+        //audioManager.volume +=(float) 0.15;
+        volSlider.value += (float) 0.1;
 
     }
     public void decreVol()
     {
-        audioManager.volume -=(float) 0.15;
+        volSlider.value -= (float)0.1;
+        //audioManager.volume -=(float) 0.15;
        
     }
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	
 }

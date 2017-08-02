@@ -10,11 +10,7 @@ public class CoinManager : MonoBehaviour {
     //public int totalCoin;
 	// Use this for initialization
    
- void Awake()
-    {
-        DontDestroyOnLoad(this);
-        
-    }
+
 	void Start () {
         text = GetComponent<Text>();
         //coinScore = 0;

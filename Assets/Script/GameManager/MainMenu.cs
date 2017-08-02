@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour {
     public GameObject Loading;
     public Slider slider;
     public Text progressText;
-    public GameObject Volume;
+   // public GameObject Volume;
     IEnumerator LoadScENEaSync(string index)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(index);
@@ -39,10 +39,10 @@ public class MainMenu : MonoBehaviour {
         //SceneManager.LoadScene("level1");
         Time.timeScale = 0f;
     }
-    public void vol()
+   /* public void vol()
     {
         Volume.SetActive(true);
-    }
+    }*/
     public void chooseLevel()
     {
 
