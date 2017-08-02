@@ -18,7 +18,8 @@ public class restartGame : MonoBehaviour {
       
         if (restartNow && resetTime <= Time.time)
         {
-             GameObject.Find("GameController").GetComponent<GamePlayController>().playerDIE();
+            GameObject.Find("GameController").GetComponent<AudioManager>().stopAudio();
+            GameObject.Find("GameController").GetComponent<GamePlayController>().playerDIE();
             //Time.timeScale = 1;
             //return;
            // endgame.SetActive(true);

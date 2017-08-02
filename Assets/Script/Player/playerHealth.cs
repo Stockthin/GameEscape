@@ -88,8 +88,10 @@ public class playerHealth : MonoBehaviour {
         //AudioSource.PlayClipAtPoint(playerDeathAudio, transform.position);
         Instantiate(DeathFX, transform.position, transform.rotation);
         Destroy(gameObject);
+       
         gameOverText.SetActive(true);
         pause.SetActive(false);
+        
        
         //playerAS.PlayOneShot(playerDeathAudio);
         //
